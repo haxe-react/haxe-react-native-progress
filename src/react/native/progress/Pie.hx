@@ -1,4 +1,9 @@
 package react.native.progress;
 
+import react.ReactComponent;
+
 @:jsRequire('react-native-progress', 'Pie')
-extern class Pie extends react.ReactComponent {}
+extern class Pie extends ReactComponentOfProps<{
+	> Props,
+	?size:Float,
+}> {}
